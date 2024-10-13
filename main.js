@@ -1,5 +1,5 @@
 const TelegramBot = require('node-telegram-bot-api');
-const token = '5955811266:AAEtLXoioL8RbSME59l7vaoOXsQXXsGAgRY';
+const token = '7533561581:AAFFwyb_j8ZNBppySZBtmMl-wSfnkB9SEzs';
 const bot = new TelegramBot(token, { polling: true });
 
 let users = {};
@@ -8,7 +8,7 @@ bot.on('message', (msg) => {
   const chatId = msg.chat.id;
 
   if (msg.text === '/start' || msg.text === 'Order Again') {
-    bot.sendMessage(chatId, `Welcome to J Printing Service Bot! Please send a file in doc or pdf format.`);
+    bot.sendMessage(chatId, `Welcome to Ahadu Printing Service Bot! Please send a file in doc or pdf format.`);
   }
 
   if (msg.document) {
